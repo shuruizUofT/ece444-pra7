@@ -59,10 +59,7 @@ added tests should also pass. Keep the environment active for the activities.
 
 ### 3. Open the activity handout
 
-In your computer’s file manager, open your cloned `ece444-pra7` folder, then the
-`docs` folder. Open **index.html in a web browser**. If your editor opens the source
-instead, use your file manager’s **Open With** option and choose a browser.
-The [file on GitHub](docs/index.html) displays HTML source rather than the rendered handout.
+**Activity handout:** URL to be added by the instructor.
 
 Continue with **1) Configure static analysis and formatting**. Templates and the
 flawed code sample are in `lab-assets/`; you will create the active configurations
