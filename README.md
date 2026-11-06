@@ -4,34 +4,9 @@ Fork this repository to begin the practical. The starter includes a calculator,
 two tests, and pinned development dependencies. You will configure Ruff,
 pre-commit, and GitHub Actions during the lab.
 
-## Before setup
+## Environment
 
-Install [Python 3.15.2](https://www.python.org/downloads/release/python-3152/)
-and a recent [Git](https://git-scm.com/downloads) (2.31 or newer). Reopen your
-terminal after installation. Check that the commands are available:
-
-```sh
-python3.15 --version
-git --version
-```
-
-On Windows, use `py -3.15 --version` instead. If a command is not found, complete
-the installation and ensure it is on your PATH before continuing. On macOS,
-if Git reports an Xcode license or developer-tools error, follow your system’s
-setup instructions or install Git from the link above.
-
-You also need a GitHub account. If you have not configured GitHub authentication,
-one option is to install the [GitHub CLI](https://cli.github.com/) and run:
-
-```sh
-gh auth login
-```
-
-Choose **GitHub.com**, **HTTPS**, and browser sign-in. When asked whether to
-authenticate Git with your GitHub credentials, choose **Yes**. If you already
-use another working authentication method, keep it. See
-[GitHub authentication guidance](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github)
-for alternatives. Your GitHub account password cannot be used as a Git HTTPS password.
+This lab was tested with **Python 3.15.2**. The commands below use Python 3.15.
 
 ## Start
 
