@@ -22,10 +22,10 @@ git clone https://github.com/YOUR_USERNAME/ece444-pra7.git
 cd ece444-pra7
 ```
 
-### 2. Set up the environment and run tests
+### 2. Set up the environment
 
 Choose **one** command block for your platform. Each creates an isolated environment,
-installs the pinned tools, and runs the starter tests.
+installs the pinned tools.
 
 **macOS / Linux**
 
@@ -33,7 +33,6 @@ installs the pinned tools, and runs the starter tests.
 python3.15 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements-dev.txt
-python -m pytest -q
 ```
 
 **Windows — PowerShell**
@@ -42,7 +41,6 @@ python -m pytest -q
 py -3.15 -m venv .venv
 .venv\Scripts\Activate.ps1
 python -m pip install -r requirements-dev.txt
-python -m pytest -q
 ```
 
 **Windows — Command Prompt**
@@ -51,11 +49,10 @@ python -m pytest -q
 py -3.15 -m venv .venv
 .venv\Scripts\activate.bat
 python -m pip install -r requirements-dev.txt
-python -m pytest -q
 ```
 
-On a new fork, expect **2 passed**. If you are verifying a completed fork, your
-added tests should also pass. Keep the environment active for the activities.
+Keep the environment active. You will run the tests as part of the activities
+in the handout.
 
 ## Contents
 
