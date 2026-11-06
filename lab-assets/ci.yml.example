@@ -24,7 +24,7 @@ jobs:
           cache: pip
           cache-dependency-path: requirements-dev.txt
       - run: python -m pip install -r requirements-dev.txt
-      - run: exit 1 # TODO: run Ruff lint with GitHub annotations
+      - run: python -m ruff check --output-format=github .  # Report lint findings as GitHub annotations
 
   format:
     runs-on: ubuntu-latest
@@ -37,7 +37,7 @@ jobs:
           cache: pip
           cache-dependency-path: requirements-dev.txt
       - run: python -m pip install -r requirements-dev.txt
-      - run: exit 1 # TODO: check formatting without modifying files
+      - run: python -m ruff format --check .  # Check formatting without changing files
 
   tests:
     runs-on: ubuntu-latest
@@ -50,4 +50,4 @@ jobs:
           cache: pip
           cache-dependency-path: requirements-dev.txt
       - run: python -m pip install -r requirements-dev.txt
-      - run: exit 1 # TODO: run pytest, stopping after the first failure
+      - run: python -m pytest -q --maxfail=1  # Run tests; stop after the first failure

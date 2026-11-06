@@ -8,8 +8,8 @@ These files are starter resources, not active configurations. Follow the
 | `pyproject.toml.example` | `pyproject.toml` |
 | `pre-commit-config.yaml.example` | `.pre-commit-config.yaml` |
 | `calculator-bugs.py.txt` | Replace the contents of `calculator.py` during the finding investigation. |
-| `ci.yml.example` | `.github/workflows/ci.yml`; complete the three command placeholders. |
+| `ci.yml.example` | `.github/workflows/ci.yml`; complete workflow with comments. |
 
 Keep the resource files in this directory unchanged. Edit your destination copies.
-The `.example` and `.txt` suffixes prevent incomplete or deliberately flawed
+The `.example` and `.txt` suffixes prevent example or deliberately flawed
 resources from becoming active checks or Python modules in the starter.
