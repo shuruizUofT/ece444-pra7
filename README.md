@@ -25,8 +25,8 @@ with `.venv\Scripts\Activate.ps1` (PowerShell) or
 
 Both tests should pass. Continue with **1) Configure static analysis and formatting**
 in the lab handout: [docs/index.html](docs/index.html). Download or open that HTML
-file in a browser to read it. The repository intentionally has no Ruff configuration,
-pre-commit configuration, or CI workflow yet.
+file in a browser to read it. Templates and a flawed code sample are in `lab-assets/`. The active Ruff configuration,
+pre-commit configuration, and CI workflow are tasks you will complete during the activities.
 
 When opening a pull request for the lab, set the base repository to
 **your own fork**, not the instructor repository.
@@ -54,7 +54,8 @@ Continue with the activities and submission requirements in the HTML handout.
 - `test_calculator.py`: two baseline tests.
 - `requirements-dev.txt`: pinned Ruff, pre-commit, and pytest releases.
 - `.gitignore`: excludes environments and generated caches.
-- `docs/index.html`: complete lab handout.
+- `lab-assets/`: configuration templates and the deliberately flawed code sample.
+- `docs/index.html`: activity directions, checkpoints, and submission requirements.
 
 ## Attribution
 
