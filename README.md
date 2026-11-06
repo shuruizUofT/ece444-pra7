@@ -10,11 +10,9 @@ This lab was tested with **Python 3.15.2**. The commands below use Python 3.15.
 
 ## Start
 
-### 1. Fork the repository
+### 1. Fork and clone locally
 
 Fork this repository into your personal GitHub account.
-
-### 2. Clone and set up
 
 In your terminal, clone your fork and enter its folder. Replace `YOUR_USERNAME`
 with your GitHub username:
@@ -23,6 +21,8 @@ with your GitHub username:
 git clone https://github.com/YOUR_USERNAME/ece444-pra7.git
 cd ece444-pra7
 ```
+
+### 2. Set up the environment and run tests
 
 Choose **one** command block for your platform. Each creates an isolated environment,
 installs the pinned tools, and runs the starter tests.
