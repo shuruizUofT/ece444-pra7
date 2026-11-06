@@ -7,10 +7,12 @@ pre-commit, and GitHub Actions during the lab.
 ## Start
 
 1. Fork this repository into your personal GitHub account.
-2. Clone **your fork**, then enter its directory.
-3. Create a Python 3.15 environment and install the dependencies:
+2. Run the commands below, replacing `YOUR_USERNAME` with your GitHub username.
+   They clone your fork, create a Python 3.15 environment, install the tools, and run the baseline tests:
 
 ```sh
+git clone https://github.com/YOUR_USERNAME/ece444-pra7.git
+cd ece444-pra7
 python3.15 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements-dev.txt
@@ -29,7 +31,7 @@ pre-commit configuration, or CI workflow yet.
 When opening a pull request for the lab, set the base repository to
 **your own fork**, not the instructor repository.
 
-## How to work through this lab
+## What the setup commands do
 
 You may copy and paste the setup commands. Environment setup is preparation;
 the learning objectives are understanding static analysis and continuous integration.
@@ -44,20 +46,7 @@ Read each command before running it:
 | `python -m pip install -r requirements-dev.txt` | Install the pinned development tools. |
 | `python -m pytest -q` | Verify that the two baseline tests pass. |
 
-For the assessed work, use the provided examples as starting points and make
-sure you can explain your choices:
-
-1. **Configure Ruff:** explain what each enabled rule family checks and why it
-   belongs in the configuration.
-2. **Investigate findings:** run Ruff, interpret the reported rule codes, and
-   repair the code. Distinguish automatic fixes from changes requiring your judgment.
-3. **Configure CI:** identify the commands that perform linting, formatting checks,
-   and tests in the workflow. Explain what causes each check to fail.
-4. **Verify the result:** provide evidence of a failed check, your repair, and a
-   passing pull request. Explain why tests can pass while static analysis fails.
-
-Copying a configuration or workflow alone does not demonstrate understanding.
-Your explanations and the failed-to-passing evidence are part of the lab work.
+Continue with the activities and submission requirements in the HTML handout.
 
 ## Contents
 
