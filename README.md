@@ -68,11 +68,3 @@ added tests should also pass. Keep the environment active for the activities.
 This practical is adapted in structure from
 [STAT 4160: Data Science Productivity Tools, Session 14 — pre-commit & GitHub Actions CI](https://ywanglab.github.io/STAT4160/lec14.html).
 The calculator examples and ECE444 instructions were prepared for this practical.
-
-## Troubleshooting
-
-- **`No module named ruff` or `pytest`:** reactivate `.venv` and install `requirements-dev.txt` again.
-- **`unknown option deduplicate`:** your Git is too old for pre-commit. Install a recent Git, restart the terminal, and check `git --version`.
-- **A hook changed files:** review the changes, run `git add` on the changed files, and retry the check or commit.
-- **PowerShell blocks environment activation:** use Command Prompt and `.venv\Scripts\activate.bat` instead.
-- **An expected failing command returns a nonzero exit code:** read its report and proceed to the next lab step; run demonstration commands one at a time.
