@@ -59,16 +59,9 @@ added tests should also pass. Keep the environment active for the activities.
 
 ## Contents
 
-- `calculator.py`: initial application code.
-- `test_calculator.py`: two baseline tests.
-- `requirements-dev.txt`: pinned Ruff, pre-commit, and pytest releases.
-- `.gitignore`: excludes environments and generated caches.
-- `lab-assets/pyproject.toml.example`: Ruff configuration template.
-- `lab-assets/pre-commit-config.yaml.example`: pre-commit hook configuration template.
-- `lab-assets/calculator-bugs.py.txt`: deliberately flawed calculator sample.
-- `lab-assets/ci.yml.example`: GitHub Actions workflow template.
-- `lab-assets/README.md`: asset descriptions and destination paths.
-- `docs/index.html`: activity directions, checkpoints, and submission requirements.
+- `calculator.py` and `test_calculator.py`: starter code and tests.
+- `requirements-dev.txt`: development dependencies.
+- [lab-assets/](lab-assets/): configuration templates and the flawed code sample.
 
 ## Attribution
 
