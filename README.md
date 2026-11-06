@@ -20,51 +20,100 @@ the installation and ensure it is on your PATH before continuing. On macOS,
 if Git reports an Xcode license or developer-tools error, follow your system’s
 setup instructions or install Git from the link above.
 
-You also need a GitHub account. Before your first commit, check your Git identity:
+You also need a GitHub account. If you have not configured GitHub authentication,
+one option is to install the [GitHub CLI](https://cli.github.com/) and run:
+
+```sh
+gh auth login
+```
+
+Choose **GitHub.com**, **HTTPS**, and browser sign-in. When asked whether to
+authenticate Git with your GitHub credentials, choose **Yes**. If you already
+use another working authentication method, keep it. See
+[GitHub authentication guidance](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github)
+for alternatives. Your GitHub account password cannot be used as a Git HTTPS password.
+
+## Start
+
+### 1. Fork and clone
+
+On this repository’s GitHub page, click **Fork**, choose your personal account
+as the owner, keep the name **ece444-pra7**, and create the fork with the **main**
+branch. Then run the following in a terminal, replacing `YOUR_USERNAME` with
+your GitHub username. Run it from the parent directory where you want the project:
+
+```sh
+git clone https://github.com/YOUR_USERNAME/ece444-pra7.git
+cd ece444-pra7
+```
+
+Run the remaining setup commands inside this cloned folder.
+
+### 2. Set your Git commit identity
+
+Check the identity Git will use for this clone:
 
 ```sh
 git config user.name
 git config user.email
 ```
 
-If either is empty, after cloning your fork run the following **inside that clone**,
-replacing the example values with your own name and GitHub-associated email
-(or your GitHub-provided private noreply address):
+If either is empty or incorrect, set it for this repository. Replace both example
+values with your own name and GitHub-associated email (or your GitHub-provided
+private noreply address):
 
 ```sh
 git config user.name "Your Name"
 git config user.email "YOUR_EMAIL"
 ```
 
-These settings identify your commits; they do not sign you into GitHub. When
-pushing for the first time, follow GitHub’s sign-in prompt. An account password
-is not accepted for Git HTTPS authentication; see
-[GitHub authentication guidance](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github).
+This identifies your commits; it does not sign you into GitHub.
 
-## Start
+### 3. Create the environment and run the starter tests
 
-1. Fork this repository into your personal GitHub account.
-2. Run the commands below, replacing `YOUR_USERNAME` with your GitHub username.
-   They clone your fork, create a Python 3.15 environment, install the tools, and run the baseline tests:
+Choose **one** command block for your platform. Each creates an isolated environment,
+installs the pinned tools, and runs the starter tests.
+
+**macOS / Linux**
 
 ```sh
-git clone https://github.com/YOUR_USERNAME/ece444-pra7.git
-cd ece444-pra7
 python3.15 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements-dev.txt
 python -m pytest -q
 ```
 
-On Windows, create the environment with `py -3.15 -m venv .venv` and activate
-with `.venv\Scripts\Activate.ps1` (PowerShell) or
-`.venv\Scripts\activate.bat` (Command Prompt).
+**Windows — PowerShell**
 
-On a new fork, both starter tests should pass. If revisiting a completed fork, your added tests should also pass. Continue with **1) Configure static analysis and formatting**
-in the lab handout: [docs/index.html](docs/index.html). Download or open that HTML
-file in a browser to read it. Templates and a flawed code sample are in `lab-assets/`. The active Ruff configuration,
-pre-commit configuration, and CI workflow are tasks you will complete during the activities.
+```powershell
+py -3.15 -m venv .venv
+.venv\Scripts\Activate.ps1
+python -m pip install -r requirements-dev.txt
+python -m pytest -q
+```
 
+**Windows — Command Prompt**
+
+```bat
+py -3.15 -m venv .venv
+.venv\Scripts\activate.bat
+python -m pip install -r requirements-dev.txt
+python -m pytest -q
+```
+
+On a new fork, expect **2 passed**. If you are verifying a completed fork, your
+added tests should also pass. Keep the environment active for the activities.
+
+### 4. Open the activity handout
+
+In your computer’s file manager, open your cloned `ece444-pra7` folder, then the
+`docs` folder. Open **index.html in a web browser**. If your editor opens the source
+instead, use your file manager’s **Open With** option and choose a browser.
+The [file on GitHub](docs/index.html) displays HTML source rather than the rendered handout.
+
+Continue with **1) Configure static analysis and formatting**. Templates and the
+flawed code sample are in `lab-assets/`; you will create the active configurations
+and workflow during the activities.
 
 ## What the setup commands do
 
