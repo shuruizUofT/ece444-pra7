@@ -10,41 +10,19 @@ This lab was tested with **Python 3.15.2**. The commands below use Python 3.15.
 
 ## Start
 
-### 1. Fork and clone
+### 1. Fork the repository
 
-On this repository’s GitHub page, click **Fork**, choose your personal account
-as the owner, keep the name **ece444-pra7**, and create the fork with the **main**
-branch. Then run the following in a terminal, replacing `YOUR_USERNAME` with
-your GitHub username. Run it from the parent directory where you want the project:
+Fork this repository into your personal GitHub account.
+
+### 2. Clone and set up
+
+In your terminal, clone your fork and enter its folder. Replace `YOUR_USERNAME`
+with your GitHub username:
 
 ```sh
 git clone https://github.com/YOUR_USERNAME/ece444-pra7.git
 cd ece444-pra7
 ```
-
-Run the remaining setup commands inside this cloned folder.
-
-### 2. Set your Git commit identity
-
-Check the identity Git will use for this clone:
-
-```sh
-git config user.name
-git config user.email
-```
-
-If either is empty or incorrect, set it for this repository. Replace both example
-values with your own name and GitHub-associated email (or your GitHub-provided
-private noreply address):
-
-```sh
-git config user.name "Your Name"
-git config user.email "YOUR_EMAIL"
-```
-
-This identifies your commits; it does not sign you into GitHub.
-
-### 3. Create the environment and run the starter tests
 
 Choose **one** command block for your platform. Each creates an isolated environment,
 installs the pinned tools, and runs the starter tests.
@@ -79,7 +57,7 @@ python -m pytest -q
 On a new fork, expect **2 passed**. If you are verifying a completed fork, your
 added tests should also pass. Keep the environment active for the activities.
 
-### 4. Open the activity handout
+### 3. Open the activity handout
 
 In your computer’s file manager, open your cloned `ece444-pra7` folder, then the
 `docs` folder. Open **index.html in a web browser**. If your editor opens the source
