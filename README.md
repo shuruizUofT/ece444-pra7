@@ -29,6 +29,36 @@ pre-commit configuration, or CI workflow yet.
 When opening a pull request for the lab, set the base repository to
 **your own fork**, not the instructor repository.
 
+## How to work through this lab
+
+You may copy and paste the setup commands. Environment setup is preparation;
+the learning objectives are understanding static analysis and continuous integration.
+Read each command before running it:
+
+| Command | Purpose |
+| --- | --- |
+| `git clone <your-fork-url>` | Download your own fork to your computer. |
+| `cd ece444-pra7` | Enter the project directory. |
+| `python3.15 -m venv .venv` | Create an isolated Python environment for the lab. |
+| `source .venv/bin/activate` | Activate that environment on macOS/Linux. |
+| `python -m pip install -r requirements-dev.txt` | Install the pinned development tools. |
+| `python -m pytest -q` | Verify that the two baseline tests pass. |
+
+For the assessed work, use the provided examples as starting points and make
+sure you can explain your choices:
+
+1. **Configure Ruff:** explain what each enabled rule family checks and why it
+   belongs in the configuration.
+2. **Investigate findings:** run Ruff, interpret the reported rule codes, and
+   repair the code. Distinguish automatic fixes from changes requiring your judgment.
+3. **Configure CI:** identify the commands that perform linting, formatting checks,
+   and tests in the workflow. Explain what causes each check to fail.
+4. **Verify the result:** provide evidence of a failed check, your repair, and a
+   passing pull request. Explain why tests can pass while static analysis fails.
+
+Copying a configuration or workflow alone does not demonstrate understanding.
+Your explanations and the failed-to-passing evidence are part of the lab work.
+
 ## Contents
 
 - `calculator.py`: initial application code.
