@@ -23,13 +23,11 @@ On Windows, create the environment with `py -3.15 -m venv .venv` and activate
 with `.venv\Scripts\Activate.ps1` (PowerShell) or
 `.venv\Scripts\activate.bat` (Command Prompt).
 
-Both tests should pass. Continue with **1) Configure static analysis and formatting**
+On a new fork, both starter tests should pass. If revisiting a completed fork, your added tests should also pass. Continue with **1) Configure static analysis and formatting**
 in the lab handout: [docs/index.html](docs/index.html). Download or open that HTML
 file in a browser to read it. Templates and a flawed code sample are in `lab-assets/`. The active Ruff configuration,
 pre-commit configuration, and CI workflow are tasks you will complete during the activities.
 
-When opening a pull request for the lab, set the base repository to
-**your own fork**, not the instructor repository.
 
 ## What the setup commands do
 
@@ -46,7 +44,6 @@ Read each command before running it:
 | `python -m pip install -r requirements-dev.txt` | Install the pinned development tools. |
 | `python -m pytest -q` | Verify that the two baseline tests pass. |
 
-Continue with the activities and submission requirements in the HTML handout.
 
 ## Contents
 
